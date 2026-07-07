@@ -1,0 +1,1 @@
+globalThis.process??={};globalThis.process.env??={};async function r(e,s){const o=await fetch("/_ploy/form-submit",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({formName:e,pageUrl:window.location.href,data:s}),keepalive:!0});if(!o.ok)throw new Error(`Form submission failed (${o.status})`);return{ok:!0}}export{r as s};
